@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran - DP</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro <input type="number" name="vel1" id="vel1"> Km/h
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id = "div1"> Resultado</div>
+
+    <script>
+        
+        function calcular(){
+            var velMod = document.getElementById("vel1")
+            var resultado = document.getElementById("div1")
+            var vel = Number(velMod.value)
+
+            if(vel > 80){
+                resultado.innerHTML = `<p>Você foi multado, sua velocidade é de <strong>${vel}</strong> Km/h, e o permitdo
+                    para esta estrada é de <strong>80 Km/H </strong> </p>`
+            }else{
+                resultado.innerHTML += `<p>Sua velocidade é de ${vel} Km/H </p>`
+                resultado.innerHTML += `<p> Continue respeitando o limite de velocidade`
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>

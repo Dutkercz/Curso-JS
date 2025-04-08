@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+    <style>
+        body{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var num = window.prompt("Digite um numero")
+        var total = 0;
+        if(num > 0 ){
+            total = num % 2 == 0 ? "Par" : "Impar"
+        }else{
+            total = "o 0 não é Par e nem Impar"
+        }
+        
+        document.writeln(total)
+    </script>
+    
+</body>
+</html>
