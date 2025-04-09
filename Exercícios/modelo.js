@@ -4,20 +4,23 @@ function carregar(){
     var data = new Date;
     var horaAtual = data.getHours()
     var minutos = data.getMinutes()
-
+    
+    if(minutos < 10){
+        minutos = "0" + minutos
+    }
     msg.innerHTML = `Agora são ${horaAtual}:${minutos} Hrs`
 
     if(horaAtual > 0 && horaAtual < 12){
         //bom dia
-        img.src = 'manha.png'
+        img.src = 'imgs/manha.png'
         document.body.style.background = "rgb(156, 154, 131)"
     }else if (horaAtual >= 12 && horaAtual < 18){
         //boa tarde
-        img.src = 'tarde.png'
+        img.src = 'imgs/tarde.png'
         document.body.style.background = "rgb(243, 223, 43)"
     }else{
         //boa noite
-        img.src = "noite.png"
+        img.src = "imgs/noite.png"
         document.body.style.background = "rgb(21, 25, 59)"
     }
 }
