@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vamos Contar</title>
-    <link rel="stylesheet" href="ex03.css">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="ex04.css">
 </head>
 <body>
     <header>
-        <h1>VAMOS CONTAR</h1>
+        <h1>Gerador de Tabuada</h1>
     </header>
 
     <section>
             <div id="div1">
-                <p>Inicio <input type="number" name="ini" id="ini"></p>
-                <p><input type="button" value="Start" id="btn1" onclick="contar()"></p>
+                <p>Numero: <input type="number" name="ini" id="ini">
+                <input type="button" value="Start" id="btn1" onclick="tabuada()"></p>     
             </div>
 
-            <div id="res">
-                 Preparando contagem...
+            <div>
+                 <select name="sel" id="sel" size="10"></select>
             </div>
 
     </section>
@@ -27,6 +27,6 @@
         <p>&copy; OlocoBixo </p>
     </footer>
 
-    <script src="ex03.js"></script>
+    <script src="ex04.js"></script>
 </body>
 </html>
