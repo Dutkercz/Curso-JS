@@ -3,12 +3,10 @@ function verificar(){
     var data = new Date;
     var anoAtual = data.getFullYear();
     var anoEntrada = document.getElementById("anoNasc")
-    var resultado = document.getElementById("div2")
-    
+    var resultado = document.getElementById("div2") 
     var img = document.createElement("img")
     img.setAttribute("id", "foto")
     
-
     if(anoEntrada.value.length == 0 || anoEntrada.value > anoAtual){
         alert("[ERROR] Verifique os dados e tente novamente!")
     }else{
